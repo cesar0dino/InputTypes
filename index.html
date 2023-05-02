@@ -9,8 +9,79 @@
 <div class="container">
     <div class="content">
     <h1>Get My Ice Cream</h1>
+        <form>
+            <div class="row">
+                <div>
+                    <label for="firstname">First</label>
+                    <input id="firstname" name="first_name" type="text">
+                </div>
+                <div>
+                    <label for="lastname">Last</label>
+                    <input id="lastname" name="last_name" type="text">
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 
+<div>
+    <div>
+        <input type="radio" id="Vanilla" name="iceacream">
+        <label for="Vanilla">Vanilla</label>
+    </div>
+    <div>
+        <input type="radio" id="Strawberry" name="iceacream">
+        <label for="Strawberry">Strawberry</label>
+    </div>
+    <div>
+        <input type="radio" id="Chocolate" name="iceacream">
+        <label for="Chocolate">Chocolate</label>
+    </div>
+</div>
+
+<div>
+    <div>
+        <input type="radio" id="small" name="size">
+        <label for="small">Small</label>
+    </div>
+    <div>
+        <input type="radio" id="medium" name="size">
+        <label for="medium">Medium</label>
+    </div>
+    <div>
+        <input type="radio" id="large" name="size">
+        <label for="large">Large</label>
+    </div>
+</div>
+
+<div>
+    <div>
+        <input type="checkbox" id="sprinkles" name="sprinkles">
+        <label for="sprinkles">Sprinkles</label>
+    </div>
+    <div>
+        <input type="checkbox" id="whippedcream" name="whippedcream">
+        <label for="whippedcream">Whipped Cream</label>
+    </div>
+    <div>
+        <input type="checkbox" id="caramel" name="caramel">
+        <label for="caramel">Caramel Sauce</label>
+    </div>
+</div>
+
+<div>
+    <label for="container">Please Choose One</label>
+    <select name="container" id="container">
+        <option value="cup">Plastic Cup</option>
+        <option value="sugar">Sugar Cone</option>
+        <option value="waffle">Waffle Cone</option>
+        <option value="dippedwaffle">Chocolate Dipped Waffle Cone</option>
+    </select>
+</div>
+
+<div>
+    <label for="SpecialRequests">Special Requests:</label>
+    <textarea id="SpecialRequests" name="SpecialRequests" row="4" cols="10" placeholder="Allergic to peanut, substitution, etc."></textarea>
+</div>
 </body>
 </html>
