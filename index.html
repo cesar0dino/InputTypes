@@ -10,6 +10,8 @@
     <div class="content">
     <h1>Get My Ice Cream</h1>
         <form>
+            <fieldset>
+                <legend>Customer:</legend></legend>
             <div class="row">
                 <div>
                     <label for="firstname">First</label>
@@ -20,11 +22,14 @@
                     <input id="lastname" name="last_name" type="text">
                 </div>
             </div>
+            </fieldset>
         </form>
     </div>
 </div>
 
-<div>
+<div classw="row">
+    <fieldset>
+        <legend>Flavor:</legend></legend>
     <div>
         <input type="radio" id="Vanilla" name="iceacream">
         <label for="Vanilla">Vanilla</label>
@@ -37,9 +42,12 @@
         <input type="radio" id="Chocolate" name="iceacream">
         <label for="Chocolate">Chocolate</label>
     </div>
+    </fieldset>
 </div>
 
 <div>
+    <fieldset>
+        <legend>Size:</legend></legend>
     <div>
         <input type="radio" id="small" name="size">
         <label for="small">Small</label>
@@ -52,9 +60,12 @@
         <input type="radio" id="large" name="size">
         <label for="large">Large</label>
     </div>
+    </fieldset>
 </div>
 
 <div>
+    <fieldset>
+        <legend>Topping:</legend></legend>
     <div>
         <input type="checkbox" id="sprinkles" name="sprinkles">
         <label for="sprinkles">Sprinkles</label>
@@ -67,9 +78,12 @@
         <input type="checkbox" id="caramel" name="caramel">
         <label for="caramel">Caramel Sauce</label>
     </div>
+    </fieldset>
 </div>
 
 <div>
+    <fieldset>
+        <legend>Cup or Cone:</legend></legend>
     <label for="container">Please Choose One</label>
     <select name="container" id="container">
         <option value="cup">Plastic Cup</option>
@@ -77,11 +91,19 @@
         <option value="waffle">Waffle Cone</option>
         <option value="dippedwaffle">Chocolate Dipped Waffle Cone</option>
     </select>
+    </fieldset>
 </div>
-
+    <fieldset>
+        <legend>Special:</legend></legend>
 <div>
     <label for="SpecialRequests">Special Requests:</label>
     <textarea id="SpecialRequests" name="SpecialRequests" row="4" cols="10" placeholder="Allergic to peanut, substitution, etc."></textarea>
 </div>
+    </fieldset>
+
+<fieldset>
+    <button type="button" onclick="alert('Free today for our Grand Opening!')">Calculate Cost</button>
+    <button type="submit">Submit Order</button>
+</fieldset>
 </body>
 </html>
